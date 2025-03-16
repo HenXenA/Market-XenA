@@ -1,0 +1,176 @@
+/* Reset dan dasar styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fffdff;
+    line-height: 1.6;
+    background-color: #121212; /* Latar belakang gelap */
+}
+
+/* Container umum */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e; /* Warna gelap untuk header */
+    color: #fefcfc;
+    padding: 20px 0;
+}
+header .logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fbfafa;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: url('banner2.png')
+no-repeat center center;
+    background-size: contain; /*
+Menghindari pemotongan gambar */
+    height: 300px; /* Sesuaikan tinggi
+    dengan kebutuhan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hero .btn-primary {
+    background-color: #fcfafa81;
+    color: #0a0909;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.hero .btn-primary:hover {
+    background-color: #f39c12;
+    color: rgb(249, 248, 248);
+}
+
+/* Produk Section */
+.produk {
+    padding: 50px 0;
+    text-align: center;
+}
+.produk h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.produk .produk-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.produk .produk-item {
+    width: 30%;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+    opacity: 100;
+    transform: translateY(50px);
+    background-color: #1e1e1e;
+}
+.produk .produk-item:hover {
+    transform: translateY(-5px);
+}
+.produk .produk-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.produk .produk-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.produk .produk-item p {
+    margin: 10px 0;
+    color: #bbb;
+}
+.produk .produk-item .btn-secondary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.produk .produk-item .btn-secondary:hover {
+    background-color: #f39c12;
+}
+
+/* Animasi fade-in untuk produk */
+.produk .produk-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tentang Kami Section */
+.tentang, .kontak {
+    background-color: #181818;
+    padding: 50px 0;
+    text-align: center;
+}
+.tentang h2, .kontak h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.kontak form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontak form input, .kontak form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ddd;
+}
+.kontak form button {
+    width: 50%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
